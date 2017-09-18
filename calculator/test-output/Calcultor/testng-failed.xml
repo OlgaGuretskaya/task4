@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Calcultor]">
+  <parameter name="a" value="45.0"/>
+  <parameter name="tgExpected" value="1.0"/>
+  <parameter name="ctgExpected" value="1.0"/>
+  <parameter name="sinExpected" value="0.7071067811865475"/>
+  <parameter name="cosExpected" value="0.7071067811865475"/>
+  <test name="trig functions(failed)">
+    <parameter name="a" value="45.0"/>
+    <parameter name="tgExpected" value="1.0"/>
+    <parameter name="ctgExpected" value="1.0"/>
+    <parameter name="sinExpected" value="0.7071067811865475"/>
+    <parameter name="cosExpected" value="0.7071067811865475"/>
+    <groups>
+      <run>
+        <include name="sin/cos"/>
+        <include name="tg/ctg"/>
+        <include name="config"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SinTest">
+        <methods>
+          <include name="testCos" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SinTest -->
+      <class name="CtgTest">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- CtgTest -->
+      <class name="CosTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="testCos" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CosTest -->
+      <class name="SumTest">
+        <methods>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- SumTest -->
+      <class name="TgTest">
+        <methods>
+          <include name="testTgPositive"/>
+        </methods>
+      </class> <!-- TgTest -->
+    </classes>
+  </test> <!-- trig functions(failed) -->
+</suite> <!-- Failed suite [Calcultor] -->

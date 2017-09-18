@@ -1,0 +1,39 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Calcultor" verbose="1" parallel="false" thread-count="1">
+
+    <test name="trig functions">
+        <parameter name="a" value="45.0"/>
+        <parameter name="sinExpected" value="0.7071067811865475"/>
+        <parameter name="cosExpected" value="0.7071067811865475"/>
+        <parameter name="tgExpected" value="1.0"/>
+        <parameter name="ctgExpected" value="1.0"/>
+        <groups>
+            <run>
+                <include name="sin/cos" />
+                <include name="tg/ctg" />
+                <include name="config" />
+            </run>>
+        </groups>
+        <classes>
+            <class name="SinTest"></class>
+            <class name="CosTest"></class>
+            <class name="TgTest"></class>
+            <class name="CtgTest"></class>
+        </classes>
+    </test>
+
+    <test name="dataProvider">
+        <groups>
+            <run>
+                <include name="dataProvider"/>
+                <include name="config"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="SumTest"></class>
+        </classes>
+    </test>
+
+
+</suite>

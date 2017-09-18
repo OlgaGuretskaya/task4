@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="4" total="13" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Calculator suite" duration-ms="0" started-at="2017-09-08T21:10:27Z" finished-at="2017-09-08T21:10:27Z">
+    <groups>
+    </groups>
+  </suite> <!-- Calculator suite -->
+  <suite name="Calcultor" duration-ms="131" started-at="2017-09-08T21:10:26Z" finished-at="2017-09-08T21:10:26Z">
+    <groups>
+      <group name="dataProvider">
+        <method signature="SumTest.testSumLong(long, long, long)[pri:0, instance:SumTest@b065c63]" name="testSumLong" class="SumTest"/>
+      </group> <!-- dataProvider -->
+      <group name="sin/cos">
+        <method signature="CosTest.testCos(double, double)[pri:0, instance:CosTest@8807e25]" name="testCos" class="CosTest"/>
+        <method signature="SinTest.testCos(double, double)[pri:0, instance:SinTest@16b4a017]" name="testCos" class="SinTest"/>
+      </group> <!-- sin/cos -->
+      <group name="tg/ctg">
+        <method signature="CtgTest.testCtgPositive(double, double)[pri:0, instance:CtgTest@12f40c25]" name="testCtgPositive" class="CtgTest"/>
+        <method signature="TgTest.testTgPositive(double, double)[pri:0, instance:TgTest@2a3046da]" name="testTgPositive" class="TgTest"/>
+      </group> <!-- tg/ctg -->
+    </groups>
+    <test name="trig functions" duration-ms="31" started-at="2017-09-08T21:10:26Z" finished-at="2017-09-08T21:10:26Z">
+      <class name="SinTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SinTest@16b4a017]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="testCos(double, double)[pri:0, instance:SinTest@16b4a017]" name="testCos" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[45.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.7071067811865475]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[sin 180 should be 0.0 expected [0.7071067811865475] but found [0.8509035245341184]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: sin 180 should be 0.0 expected [0.7071067811865475] but found [0.8509035245341184]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at SinTest.testCos(SinTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at Runner.main(Runner.java:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCos -->
+      </class> <!-- SinTest -->
+      <class name="CosTest">
+        <test-method status="FAIL" signature="testCos(double, double)[pri:0, instance:CosTest@8807e25]" name="testCos" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[45.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.7071067811865475]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0.7071067811865475] but found [0.8509035245341184]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0.7071067811865475] but found [0.8509035245341184]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:167)
+	at CosTest.testCos(CosTest.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at Runner.main(Runner.java:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCos -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:CosTest@8807e25]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- CosTest -->
+      <class name="CtgTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:CtgTest@12f40c25]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testCtgPositive(double, double)[pri:0, instance:CtgTest@12f40c25]" name="testCtgPositive" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[45.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCtgPositive -->
+      </class> <!-- CtgTest -->
+      <class name="TgTest">
+        <test-method status="SKIP" signature="testTgPositive(double, double)[pri:0, instance:TgTest@2a3046da]" name="testTgPositive" duration-ms="0" depends-on-groups="sin/cos" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TgTest.testTgPositive(double, double)[pri:0, instance:TgTest@2a3046da] depends on not successfully finished methods in group "sin/cos"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TgTest.testTgPositive(double, double)[pri:0, instance:TgTest@2a3046da] depends on not successfully finished methods in group "sin/cos"
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1033)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at Runner.main(Runner.java:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTgPositive -->
+      </class> <!-- TgTest -->
+    </test> <!-- trig functions -->
+    <test name="dataProvider" duration-ms="0" started-at="2017-09-08T21:10:26Z" finished-at="2017-09-08T21:10:26Z">
+      <class name="SumTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SumTest@b065c63]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:SumTest@b065c63]" name="testSumLong" duration-ms="0" started-at="2017-09-09T00:10:26Z" data-provider="dataForSum" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SumTest@b065c63]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:SumTest@b065c63]" name="testSumLong" duration-ms="0" started-at="2017-09-09T00:10:26Z" data-provider="dataForSum" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SumTest@b065c63]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:SumTest@b065c63]" name="testSumLong" duration-ms="0" started-at="2017-09-09T00:10:26Z" data-provider="dataForSum" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+      </class> <!-- SumTest -->
+    </test> <!-- dataProvider -->
+  </suite> <!-- Calcultor -->
+  <suite name="Calcultor (0)" duration-ms="15" started-at="2017-09-08T21:10:26Z" finished-at="2017-09-08T21:10:26Z">
+    <groups>
+      <group name="dataProvider">
+        <method signature="SumTest.testSumLong(long, long, long)[pri:0, instance:SumTest@66133adc]" name="testSumLong" class="SumTest"/>
+      </group> <!-- dataProvider -->
+    </groups>
+    <test name="parallel" duration-ms="15" started-at="2017-09-08T21:10:26Z" finished-at="2017-09-08T21:10:26Z">
+      <class name="SubTest">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SubTest@7bfcd12c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SubTest@7bfcd12c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SubTest@7bfcd12c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:SubTest@7bfcd12c]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="FAIL" signature="testSubDouble()[pri:0, instance:SubTest@7bfcd12c]" name="testSubDouble" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1.2-8.6 should be -7.4 expected [-7.4] but found [-7.3999999999999995]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1.2-8.6 should be -7.4 expected [-7.4] but found [-7.3999999999999995]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at SubTest.testSubDouble(SubTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubDouble -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:SubTest@7bfcd12c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SubTest@7bfcd12c]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSubLong()[pri:0, instance:SubTest@7bfcd12c]" name="testSubLong" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubLong -->
+      </class> <!-- SubTest -->
+      <class name="SumTest">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SumTest@66133adc]" name="afterMethod" is-config="true" duration-ms="15" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SumTest@66133adc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SumTest@66133adc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SumTest@66133adc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:SumTest@66133adc]" name="beforeClass" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:SumTest@66133adc]" name="testSumLong" duration-ms="0" started-at="2017-09-09T00:10:26Z" data-provider="dataForSum" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:SumTest@66133adc]" name="testSumLong" duration-ms="0" started-at="2017-09-09T00:10:26Z" data-provider="dataForSum" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SumTest@66133adc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SumTest@66133adc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="testSumDouble()[pri:0, instance:SumTest@66133adc]" name="testSumDouble" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1.2+8.6 should be 9.8 expected [9.8] but found [9.799999999999999]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1.2+8.6 should be 9.8 expected [9.8] but found [9.799999999999999]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at SumTest.testSumDouble(SumTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumDouble -->
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:SumTest@66133adc]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:SumTest@66133adc]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testSumLong(long, long, long)[pri:0, instance:SumTest@66133adc]" name="testSumLong" duration-ms="0" started-at="2017-09-09T00:10:26Z" data-provider="dataForSum" finished-at="2017-09-09T00:10:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSumLong -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:SumTest@66133adc]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:SumTest@66133adc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:SumTest@66133adc]" name="afterSuite" is-config="true" duration-ms="0" started-at="2017-09-09T00:10:26Z" finished-at="2017-09-09T00:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- SumTest -->
+    </test> <!-- parallel -->
+  </suite> <!-- Calcultor (0) -->
+</testng-results>

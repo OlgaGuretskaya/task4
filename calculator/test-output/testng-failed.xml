@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Calcultor (0)]" parallel="methods">
+  <test name="parallel(failed)" parallel="methods">
+    <classes>
+      <class name="SumTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="testSumDouble"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- SumTest -->
+      <class name="SubTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="testSubDouble"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- SubTest -->
+    </classes>
+  </test> <!-- parallel(failed) -->
+</suite> <!-- Failed suite [Calcultor (0)] -->
